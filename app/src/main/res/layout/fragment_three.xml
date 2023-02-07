@@ -8,7 +8,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@android:color/holo_red_light"
         android:orientation="horizontal">
 
         <Button
@@ -32,10 +32,10 @@
             android:textSize="15sp" />
 
         <TextView
-            android:layout_width="200dp"
-            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Fragment3"
-            android:textSize="30sp">
+            android:textSize="25dp">
         </TextView>
 
     </androidx.appcompat.widget.LinearLayoutCompat>

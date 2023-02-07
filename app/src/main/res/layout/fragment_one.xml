@@ -34,7 +34,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:text="Fragment1"
             android:textSize="30sp">

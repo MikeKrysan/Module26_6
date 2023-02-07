@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.fragment_one.*
 import timber.log.Timber
 
@@ -26,11 +27,12 @@ class twoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         button_next.setOnClickListener {
-            (activity as MainActivity).navController.navigate(R.id.threeFragment)
+//            (activity as MainActivity).navController.navigate(R.id.threeFragment)
+            view.findNavController().navigate(R.id.threeFragment)
         }
 
         button_prev.setOnClickListener {
-            (activity as MainActivity).navController.navigate(R.id.oneFragment)
+            view.findNavController().navigate(R.id.oneFragment)
         }
     }
 }
